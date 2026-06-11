@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "backend",
   "version": "1.0.0",
   "description": "",
@@ -15,3 +16,18 @@
     "express": "^5.2.1"
   }
 }
+=======
+  "name": "dieta-cetogenica-api",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
+>>>>>>> 51d92525a1b573641347650603f6b1f73a14ebb2
