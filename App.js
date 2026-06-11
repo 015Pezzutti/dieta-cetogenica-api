@@ -394,7 +394,7 @@ const db = getFirestore(app);
 const CLOUDINARY_CLOUD = 'df0db5tqt';
 const CLOUDINARY_PRESET = 'NutriGo';
 const YOUTUBE_API_KEY = 'AIzaSyBgXNgbpEwwEzlf7VuU-arKUJwB5YLV59c';
-const GROQ_API_KEY = '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';
+const GROQ_API_KEY = process.env.GROQ_API_KEY || 'YOUR_API_KEY_HERE';
 const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions'; 
 
 const STORAGE_KEYS = {
