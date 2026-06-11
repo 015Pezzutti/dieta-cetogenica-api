@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "780250461476",
+    "project_id": "nutrigo-a7c43",
+    "storage_bucket": "nutrigo-a7c43.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780250461476:android:bb5c05246bfd472da26fb1",
+        "android_client_info": {
+          "package_name": "com.dietacetogenica.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_6dbMXbNdJdLvrmpLDnG7AmSFZLqbn70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

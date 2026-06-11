@@ -1,29 +1,77 @@
 {
   "expo": {
-    "name": "DietaCetogenica",
-    "slug": "DietaCetogenica",
+    "name": "KETO+",
+    "slug": "dietacetogenica",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
+      "backgroundColor": "#0A0F0A"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#0A0F0A"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.dietacetogenica.app",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.VIBRATE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.INTERNET"
+      ]
     },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.dietacetogenica.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Para tirar fotos das suas refeições",
+        "NSPhotoLibraryUsageDescription": "Para selecionar fotos da galeria",
+        "NSMotionUsageDescription": "Para contar seus passos",
+        "NSFaceIDUsageDescription": "Para autenticação rápida"
+      }
+    },
+    "plugins": [
+      "expo-notifications",
+      "expo-local-authentication",
+      "expo-secure-store",
+      "expo-navigation-bar",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "buildToolsVersion": "36.0.0",
+            "kotlinVersion": "2.1.20"
+          }
+        }
+      ],
+      "expo-font",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "androidAppId": "ca-app-pub-8650145097882918~5905706012",
+          "iosAppId": "ca-app-pub-8650145097882918~5905706012"
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "92cb0ff1-b48f-4fb9-9475-f54458d6ba39"
+      }
     }
   }
 }
